@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactanos: formulario, direccion y horarios de Cafeteria Express.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cafeteriaexpress.com/contacto.html">
+  <title>Contacto | Cafeteria Express</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-contenedor">
+      <a href="index.html" class="logo"> Express</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Productos</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+          <li><a href="login.html">Iniciar sesion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contactanos</h1>
+
+    <section class="formulario">
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej: Pepito Perez">
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electronico:</label>
+          <input type="email" id="email" name="email" required placeholder="pepe@correo.com">
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto:</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">-- Selecciona --</option>
+            <option value="reserva">Reserva de mesa</option>
+            <option value="evento">Evento privado</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aqui..."></textarea>
+        </div>
+
+        <div class="campo campo-checkbox">
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto ser contactado por correo</label>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="info-contacto">
+      <h2>Nuestra Ubicacion</h2>
+      <p> Calle Marti #123, Pinar del Rio, Cuba</p>
+      <p> +53 555 1234</p>
+      <p> hola@cafeteriaexpress.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cafeteria Express. Todos los derechos reservados.</p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>
